@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EarthLiva
+
+A modern, sustainable product landing page built with Next.js 16 and React 19.
+
+## Features
+
+- ✨ **Responsive Design** - Mobile-first approach with Tailwind CSS
+- 🎨 **Modern UI Components** - Built with @base-ui/react
+- 📱 **Mobile Optimized** - Works seamlessly on all devices
+- ⚡ **Fast Performance** - Next.js 16 with Turbopack
+- 🎭 **Smooth Animations** - Framer Motion integration
+- ♿ **Accessible** - WCAG compliant components
+- 🌙 **Custom Error Pages** - 404, error boundary, and loading states
+
+## Tech Stack
+
+- **Framework:** Next.js 16.2.7
+- **React:** 19.2.4
+- **Styling:** Tailwind CSS 4 + PostCSS
+- **UI Components:** @base-ui/react 1.5.0
+- **Animations:** Framer Motion 12.40.0
+- **Icons:** Lucide React 1.17.0
+- **Type Safety:** TypeScript 5
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- Yarn 4.9.1+
+
+### Installation
 
 ```bash
-npm run dev
-# or
+# Install dependencies
+yarn install
+
+# Start development server
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Development
+yarn dev          # Start dev server at http://localhost:3000
 
-## Learn More
+# Production
+yarn build        # Build for production
+yarn start        # Start production server
 
-To learn more about Next.js, take a look at the following resources:
+# Utilities
+yarn lint         # Run ESLint
+yarn clean        # Clear build artifacts and cache
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   ├── not-found.tsx      # 404 page
+│   ├── error.tsx          # Error boundary
+│   └── loading.tsx        # Loading state
+├── components/
+│   ├── layout/            # Layout components (Nav, Footer)
+│   ├── sections/          # Page sections (Hero, Products, etc.)
+│   └── ui/                # Reusable UI components
+├── content/               # Content data files
+│   ├── brand.ts
+│   ├── products.ts
+│   ├── benefits.ts
+│   ├── howItWorks.ts
+│   ├── testimonials.ts
+│   └── faq.ts
+├── types/                 # TypeScript type definitions
+└── lib/                   # Utility functions
 
-## Deploy on Vercel
+public/
+├── imgs/                  # Image assets
+└── pdf/                   # PDF documents
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Page Sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The home page includes:
+
+- **Hero Section** - Eye-catching introduction
+- **Products Section** - Product showcase
+- **Benefits Section** - Key value propositions
+- **How It Works Section** - Process explanation
+- **Testimonials Section** - Customer reviews
+- **FAQ Section** - Frequently asked questions
+- **CTA Section** - Call-to-action
+
+## Deployment
+
+Deploy on Vercel with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+Or deploy manually:
+
+```bash
+yarn build
+yarn start
+```
+
+## Development Notes
+
+- The app uses Next.js 16 App Router
+- Styling is done with Tailwind CSS 4
+- Components use Base UI for accessible foundations
+- Type definitions are in `src/types/`
+- Content is managed in `src/content/`
+
+## License
+
+MIT
