@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap");
 
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -62,7 +61,7 @@
 
   --shadow-soft: 0 2px 20px rgba(45, 80, 22, 0.08);
   --shadow-hover: 0 8px 40px rgba(45, 80, 22, 0.15);
-  --shadow-gold: 0 4px 24px rgba(201, 168, 76, 0.20);
+  --shadow-gold: 0 4px 24px rgba(201, 168, 76, 0.2);
 }
 
 :root {
@@ -73,45 +72,45 @@
   --card-foreground: oklch(0.13 0.04 135);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.13 0.04 135);
-  --primary: oklch(0.30 0.12 135);
+  --primary: oklch(0.3 0.12 135);
   --primary-foreground: oklch(0.98 0 0);
   --secondary: oklch(0.93 0.02 80);
-  --secondary-foreground: oklch(0.30 0.12 135);
+  --secondary-foreground: oklch(0.3 0.12 135);
   --muted: oklch(0.95 0.01 90);
   --muted-foreground: oklch(0.42 0.03 135);
   --accent: oklch(0.86 0.06 80);
-  --accent-foreground: oklch(0.20 0.06 135);
+  --accent-foreground: oklch(0.2 0.06 135);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.02 90);
-  --input: oklch(0.90 0.02 90);
-  --ring: oklch(0.30 0.12 135);
-  --chart-1: oklch(0.30 0.12 135);
-  --chart-2: oklch(0.70 0.10 80);
+  --border: oklch(0.9 0.02 90);
+  --input: oklch(0.9 0.02 90);
+  --ring: oklch(0.3 0.12 135);
+  --chart-1: oklch(0.3 0.12 135);
+  --chart-2: oklch(0.7 0.1 80);
   --chart-3: oklch(0.47 0.14 135);
   --chart-4: oklch(0.93 0.02 80);
   --chart-5: oklch(0.42 0.03 135);
   --radius: 0.75rem;
   --sidebar: oklch(0.98 0.015 90);
   --sidebar-foreground: oklch(0.13 0.04 135);
-  --sidebar-primary: oklch(0.30 0.12 135);
+  --sidebar-primary: oklch(0.3 0.12 135);
   --sidebar-primary-foreground: oklch(0.98 0 0);
   --sidebar-accent: oklch(0.93 0.02 80);
-  --sidebar-accent-foreground: oklch(0.30 0.12 135);
-  --sidebar-border: oklch(0.90 0.02 90);
-  --sidebar-ring: oklch(0.30 0.12 135);
+  --sidebar-accent-foreground: oklch(0.3 0.12 135);
+  --sidebar-border: oklch(0.9 0.02 90);
+  --sidebar-ring: oklch(0.3 0.12 135);
 
   /* EarthLiva brand tokens */
-  --earth-green: oklch(0.30 0.12 135);
+  --earth-green: oklch(0.3 0.12 135);
   --earth-green-light: oklch(0.47 0.14 135);
-  --earth-gold: oklch(0.70 0.10 80);
+  --earth-gold: oklch(0.7 0.1 80);
   --earth-gold-light: oklch(0.86 0.06 80);
   --earth-cream: oklch(0.98 0.015 90);
   --earth-cream-dark: oklch(0.93 0.02 80);
   --earth-text: oklch(0.13 0.04 135);
   --earth-muted: oklch(0.42 0.03 135);
 
-  --font-serif: 'Lora', Georgia, serif;
-  --font-sans: 'Raleway', system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-sans: "Raleway", system-ui, sans-serif;
 }
 
 @layer base {
@@ -125,7 +124,10 @@
   html {
     scroll-behavior: smooth;
   }
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-serif);
   }
 }

@@ -52,10 +52,14 @@ export function HeroSection() {
             >
               {headlineParts.map((part, i) => (
                 <span key={i}>
-                  {i === 0 ? part : (
+                  {i === 0 ? (
+                    part
+                  ) : (
                     <>
                       <br />
-                      <span style={{ color: "var(--earth-green)" }}>{part}</span>
+                      <span style={{ color: "var(--earth-green)" }}>
+                        {part}
+                      </span>
                     </>
                   )}
                 </span>
@@ -82,11 +86,17 @@ export function HeroSection() {
                 size="lg"
                 onClick={() => handleScroll("#products")}
                 className="font-sans font-semibold text-base gap-2 cursor-pointer group"
-                style={{ backgroundColor: "var(--earth-green)", color: "white" }}
+                style={{
+                  backgroundColor: "var(--earth-green)",
+                  color: "white",
+                }}
                 aria-label="Explore our products"
               >
                 {brand.heroCta}
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+                <ArrowRight
+                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+                  aria-hidden="true"
+                />
               </Button>
               <Button
                 size="lg"
@@ -111,7 +121,12 @@ export function HeroSection() {
               className="flex flex-wrap items-center gap-4 pt-4"
               aria-label="Product certifications"
             >
-              {["Paraben Free", "Sulphate Free", "Cruelty Free", "100% Natural"].map((badge) => (
+              {[
+                "Paraben Free",
+                "Sulphate Free",
+                "Cruelty Free",
+                "100% Natural",
+              ].map((badge) => (
                 <span
                   key={badge}
                   className="text-xs font-sans font-medium px-3 py-1.5 rounded-full"
@@ -130,7 +145,11 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, x: 40, scale: 0.96 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
             className="relative order-1 lg:order-2 flex justify-center"
           >
             <div className="relative w-full max-w-sm lg:max-w-md">
@@ -145,6 +164,7 @@ export function HeroSection() {
                   alt="EarthLiva Multani Mitti Face Wash — Nature's Touch, Pure You"
                   fill
                   priority
+                  loading="eager"
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 450px"
                   className="object-cover object-center"
                 />
@@ -163,12 +183,21 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 rounded-md"
         aria-label="Scroll to products"
       >
-        <span className="text-xs font-sans" style={{ color: "var(--earth-muted)" }}>Scroll</span>
+        <span
+          className="text-xs font-sans"
+          style={{ color: "var(--earth-muted)" }}
+        >
+          Scroll
+        </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ChevronDown className="w-5 h-5" style={{ color: "var(--earth-muted)" }} aria-hidden="true" />
+          <ChevronDown
+            className="w-5 h-5"
+            style={{ color: "var(--earth-muted)" }}
+            aria-hidden="true"
+          />
         </motion.div>
       </motion.button>
     </section>
