@@ -158,15 +158,16 @@ export function HeroSection() {
                 style={{ backgroundColor: "rgba(45,80,22,0.08)" }}
                 aria-hidden="true"
               />
-              <div className="relative rounded-3xl overflow-hidden aspect-[3/4] shadow-hover">
+              <div className="relative rounded-3xl overflow-hidden shadow-hover">
                 <Image
                   src="/imgs/img-1.jpeg"
                   alt="EarthLiva Multani Mitti Face Wash — Nature's Touch, Pure You"
-                  fill
+                  width={450}
+                  height={600}
                   priority
                   loading="eager"
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 450px"
-                  className="object-cover object-center"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
