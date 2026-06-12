@@ -10,7 +10,8 @@ export const brand = {
   heroSecondaryCta: "Our Story",
   description:
     "EarthLiva is a premium natural personal care brand rooted in the wisdom of Ayurveda and the purity of nature. Every product is crafted with carefully sourced botanical ingredients, free from harmful chemicals.",
-  contact: "basilicabiotech@gmail.com",
+  contact: "Comming soon",
+  // contact: "basilicabiotech@gmail.com",
   logo: "/imgs/img-1.jpeg",
 } as const;
 
